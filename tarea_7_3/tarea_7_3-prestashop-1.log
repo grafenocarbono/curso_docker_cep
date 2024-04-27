@@ -1,0 +1,184 @@
+[38;5;6mprestashop [38;5;5m16:56:14.64 [0m[38;5;2mINFO [0m ==> 
+[38;5;6mprestashop [38;5;5m16:56:14.64 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami prestashop container[0m
+[38;5;6mprestashop [38;5;5m16:56:14.64 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+[38;5;6mprestashop [38;5;5m16:56:14.64 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+[38;5;6mprestashop [38;5;5m16:56:14.64 [0m[38;5;2mINFO [0m ==> Upgrade to Tanzu Application Catalog for production environments to access custom-configured and pre-packaged software components. Gain enhanced features, including Software Bill of Materials (SBOM), CVE scan result reports, and VEX documents. To learn more, visit [1mhttps://bitnami.com/enterprise[0m
+[38;5;6mprestashop [38;5;5m16:56:14.64 [0m[38;5;2mINFO [0m ==> 
+[38;5;6mprestashop [38;5;5m16:56:14.65 [0m[38;5;2mINFO [0m ==> ** Starting PrestaShop setup **
+[38;5;6mprestashop [38;5;5m16:56:14.67 [0m[38;5;2mINFO [0m ==> Generating sample certificates
+Certificate request self-signature ok
+subject=CN = example.com
+realpath: /bitnami/apache/conf: No such file or directory
+[38;5;6mprestashop [38;5;5m16:56:15.70 [0m[38;5;2mINFO [0m ==> Configuring Apache ServerTokens directive
+[38;5;6mprestashop [38;5;5m16:56:15.71 [0m[38;5;2mINFO [0m ==> Configuring PHP options
+[38;5;6mprestashop [38;5;5m16:56:15.72 [0m[38;5;2mINFO [0m ==> Setting PHP expose_php option
+[38;5;6mprestashop [38;5;5m16:56:15.72 [0m[38;5;2mINFO [0m ==> Setting PHP output_buffering option
+[38;5;6mprestashop [38;5;5m16:56:15.74 [0m[38;5;2mINFO [0m ==> Validating settings in MYSQL_CLIENT_* env vars
+[38;5;6mprestashop [38;5;5m16:56:15.76 [0m[38;5;3mWARN [0m ==> You set the environment variable ALLOW_EMPTY_PASSWORD=yes. For safety reasons, do not use this flag in a production environment.
+[38;5;6mprestashop [38;5;5m16:56:15.79 [0m[38;5;2mINFO [0m ==> Restoring persisted PrestaShop installation
+[38;5;6mprestashop [38;5;5m16:56:16.72 [0m[38;5;2mINFO [0m ==> Trying to connect to the database server
+[38;5;6mprestashop [38;5;5m16:56:21.77 [0m[38;5;2mINFO [0m ==> ** PrestaShop setup finished! **
+
+[38;5;6mprestashop [38;5;5m16:56:21.78 [0m[38;5;2mINFO [0m ==> ** Starting Apache **
+[Thu Apr 25 16:56:21.891078 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Unix) OpenSSL/3.0.11 configured -- resuming normal operations
+[Thu Apr 25 16:56:21.891116 2024] [core:notice] [pid 1] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf -D FOREGROUND'
+172.22.0.1 - - [25/Apr/2024:16:56:40 +0000] "GET / HTTP/1.1" 302 -
+172.22.0.1 - - [25/Apr/2024:16:56:40 +0000] "GET / HTTP/1.1" 200 11644
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /img/logo.png HTTP/1.1" 200 1831
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/blockreassurance/views/dist/front.css HTTP/1.1" 200 373
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/productcomments/views/css/productcomments.css HTTP/1.1" 200 2818
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_socialfollow/views/css/ps_socialfollow.css HTTP/1.1" 200 129
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_searchbar/ps_searchbar.css HTTP/1.1" 200 470
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/blockwishlist/public/wishlist.css HTTP/1.1" 200 1100
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/css/theme.css HTTP/1.1" 200 34411
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css HTTP/1.1" 200 2287
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_imageslider/css/homeslider.css HTTP/1.1" 200 866
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /js/jquery/ui/themes/base/minified/jquery-ui.min.css HTTP/1.1" 200 4871
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_emailsubscription/views/js/ps_emailsubscription.js HTTP/1.1" 200 846
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/blockreassurance/views/dist/front.js HTTP/1.1" 200 1969
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/core.js HTTP/1.1" 200 44515
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/js/theme.js HTTP/1.1" 200 55897
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /js/jquery/ui/jquery-ui.min.js HTTP/1.1" 200 60733
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_emailalerts/js/mailalerts.js HTTP/1.1" 200 1388
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/productcomments/views/js/productListingComments.js HTTP/1.1" 200 1528
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_shoppingcart/ps_shoppingcart.js HTTP/1.1" 200 1209
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/productcomments/views/js/jquery.rating.plugin.js HTTP/1.1" 200 1635
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/blockwishlist/public/product.bundle.js HTTP/1.1" 200 22839
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_searchbar/ps_searchbar.js HTTP/1.1" 200 795
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_imageslider/js/responsiveslides.min.js HTTP/1.1" 200 1472
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_imageslider/js/homeslider.js HTTP/1.1" 200 788
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/blockwishlist/public/vendors.js HTTP/1.1" 200 65922
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/blockwishlist/public/graphql.js HTTP/1.1" 200 72567
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/css/12a47ed5fd5585f0f422.woff2 HTTP/1.1" 200 60840
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/css/250c120c3f8b2b0bb58e.woff2 HTTP/1.1" 304 -
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/css/52260854eea2d38939bf.woff2 HTTP/1.1" 200 29756
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/css/a7360927bb3673ed7814.woff2 HTTP/1.1" 304 -
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /themes/classic/assets/css/dce0916af972e3040aa1.woff2 HTTP/1.1" 304 -
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /21-home_default/brown-bear-printed-sweater.jpg HTTP/1.1" 200 7405
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /1-home_default/hummingbird-printed-t-shirt.jpg HTTP/1.1" 200 7765
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /modules/ps_imageslider/images/sample-1.jpg HTTP/1.1" 200 234051
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /3-home_default/the-best-is-yet-to-come-framed-poster.jpg HTTP/1.1" 200 8986
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /4-home_default/the-adventure-begins-framed-poster.jpg HTTP/1.1" 200 8293
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /5-home_default/today-is-a-good-day-framed-poster.jpg HTTP/1.1" 200 8031
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /6-home_default/mug-the-best-is-yet-to-come.jpg HTTP/1.1" 200 6609
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /7-home_default/mug-the-adventure-begins.jpg HTTP/1.1" 200 6394
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /8-home_default/mug-today-is-a-good-day.jpg HTTP/1.1" 200 5994
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /module/blockwishlist/action?action=getAllWishlist HTTP/1.1" 200 50
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /robots.txt?1714064201552 HTTP/1.1" 200 829
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /robots.txt?1714064201553 HTTP/1.1" 200 829
+172.22.0.1 - - [25/Apr/2024:16:56:41 +0000] "GET /module/productcomments/CommentGrade?id_products%5B%5D=1&id_products%5B%5D=2&id_products%5B%5D=3&id_products%5B%5D=4&id_products%5B%5D=5&id_products%5B%5D=6&id_products%5B%5D=7&id_products%5B%5D=8 HTTP/1.1" 200 470
+[Thu Apr 25 16:56:56.452225 2024] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+[38;5;6mprestashop [38;5;5m17:04:51.13 [0m[38;5;2mINFO [0m ==> 
+[38;5;6mprestashop [38;5;5m17:04:51.13 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami prestashop container[0m
+[38;5;6mprestashop [38;5;5m17:04:51.13 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+[38;5;6mprestashop [38;5;5m17:04:51.13 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+[38;5;6mprestashop [38;5;5m17:04:51.13 [0m[38;5;2mINFO [0m ==> Upgrade to Tanzu Application Catalog for production environments to access custom-configured and pre-packaged software components. Gain enhanced features, including Software Bill of Materials (SBOM), CVE scan result reports, and VEX documents. To learn more, visit [1mhttps://bitnami.com/enterprise[0m
+[38;5;6mprestashop [38;5;5m17:04:51.13 [0m[38;5;2mINFO [0m ==> 
+[38;5;6mprestashop [38;5;5m17:04:51.14 [0m[38;5;2mINFO [0m ==> ** Starting PrestaShop setup **
+realpath: /bitnami/apache/conf: No such file or directory
+[38;5;6mprestashop [38;5;5m17:04:51.16 [0m[38;5;2mINFO [0m ==> Configuring Apache ServerTokens directive
+[38;5;6mprestashop [38;5;5m17:04:51.18 [0m[38;5;2mINFO [0m ==> Configuring PHP options
+[38;5;6mprestashop [38;5;5m17:04:51.18 [0m[38;5;2mINFO [0m ==> Setting PHP expose_php option
+[38;5;6mprestashop [38;5;5m17:04:51.19 [0m[38;5;2mINFO [0m ==> Setting PHP output_buffering option
+[38;5;6mprestashop [38;5;5m17:04:51.20 [0m[38;5;2mINFO [0m ==> Validating settings in MYSQL_CLIENT_* env vars
+[38;5;6mprestashop [38;5;5m17:04:51.22 [0m[38;5;3mWARN [0m ==> You set the environment variable ALLOW_EMPTY_PASSWORD=yes. For safety reasons, do not use this flag in a production environment.
+[38;5;6mprestashop [38;5;5m17:04:51.25 [0m[38;5;2mINFO [0m ==> Restoring persisted PrestaShop installation
+[38;5;6mprestashop [38;5;5m17:04:51.26 [0m[38;5;2mINFO [0m ==> Trying to connect to the database server
+[38;5;6mprestashop [38;5;5m17:04:51.31 [0m[38;5;2mINFO [0m ==> ** PrestaShop setup finished! **
+
+[38;5;6mprestashop [38;5;5m17:04:51.31 [0m[38;5;2mINFO [0m ==> ** Starting Apache **
+[Thu Apr 25 17:04:51.424860 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Unix) OpenSSL/3.0.11 configured -- resuming normal operations
+[Thu Apr 25 17:04:51.424912 2024] [core:notice] [pid 1] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf -D FOREGROUND'
+172.22.0.1 - - [25/Apr/2024:17:05:17 +0000] "GET /modules/ps_imageslider/images/sample-2.jpg HTTP/1.1" 200 194743
+172.22.0.1 - - [25/Apr/2024:17:05:25 +0000] "GET / HTTP/1.1" 302 -
+172.22.0.1 - - [25/Apr/2024:17:05:25 +0000] "GET / HTTP/1.1" 200 11645
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /img/logo.png HTTP/1.1" 200 1831
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/blockreassurance/views/dist/front.css HTTP/1.1" 200 373
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /js/jquery/ui/themes/base/minified/jquery-ui.min.css HTTP/1.1" 200 4871
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css HTTP/1.1" 200 2287
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/productcomments/views/css/productcomments.css HTTP/1.1" 200 2818
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_searchbar/ps_searchbar.css HTTP/1.1" 200 470
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_socialfollow/views/css/ps_socialfollow.css HTTP/1.1" 200 129
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/blockwishlist/public/wishlist.css HTTP/1.1" 200 1100
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_imageslider/css/homeslider.css HTTP/1.1" 200 866
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/css/theme.css HTTP/1.1" 200 34411
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_emailsubscription/views/js/ps_emailsubscription.js HTTP/1.1" 200 846
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_emailalerts/js/mailalerts.js HTTP/1.1" 200 1388
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/productcomments/views/js/jquery.rating.plugin.js HTTP/1.1" 200 1635
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/blockreassurance/views/dist/front.js HTTP/1.1" 200 1969
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/core.js HTTP/1.1" 200 44515
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_searchbar/ps_searchbar.js HTTP/1.1" 200 795
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_shoppingcart/ps_shoppingcart.js HTTP/1.1" 200 1209
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_imageslider/js/responsiveslides.min.js HTTP/1.1" 200 1472
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_imageslider/js/homeslider.js HTTP/1.1" 200 788
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/productcomments/views/js/productListingComments.js HTTP/1.1" 200 1528
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/blockwishlist/public/product.bundle.js HTTP/1.1" 200 22839
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/js/theme.js HTTP/1.1" 200 55897
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/blockwishlist/public/vendors.js HTTP/1.1" 200 65922
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /js/jquery/ui/jquery-ui.min.js HTTP/1.1" 200 60733
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/blockwishlist/public/graphql.js HTTP/1.1" 200 72567
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /robots.txt?1714064726445 HTTP/1.1" 200 829
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/css/52260854eea2d38939bf.woff2 HTTP/1.1" 200 29756
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/css/12a47ed5fd5585f0f422.woff2 HTTP/1.1" 200 60840
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/css/dce0916af972e3040aa1.woff2 HTTP/1.1" 304 -
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/css/250c120c3f8b2b0bb58e.woff2 HTTP/1.1" 304 -
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /themes/classic/assets/css/a7360927bb3673ed7814.woff2 HTTP/1.1" 304 -
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /modules/ps_imageslider/images/sample-1.jpg HTTP/1.1" 200 234051
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /1-home_default/hummingbird-printed-t-shirt.jpg HTTP/1.1" 200 7765
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /21-home_default/brown-bear-printed-sweater.jpg HTTP/1.1" 200 7405
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /3-home_default/the-best-is-yet-to-come-framed-poster.jpg HTTP/1.1" 200 8986
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /5-home_default/today-is-a-good-day-framed-poster.jpg HTTP/1.1" 200 8031
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /4-home_default/the-adventure-begins-framed-poster.jpg HTTP/1.1" 200 8293
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /6-home_default/mug-the-best-is-yet-to-come.jpg HTTP/1.1" 200 6609
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /7-home_default/mug-the-adventure-begins.jpg HTTP/1.1" 200 6394
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /8-home_default/mug-today-is-a-good-day.jpg HTTP/1.1" 200 5994
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /module/blockwishlist/action?action=getAllWishlist HTTP/1.1" 200 50
+172.22.0.1 - - [25/Apr/2024:17:05:26 +0000] "GET /module/productcomments/CommentGrade?id_products%5B%5D=1&id_products%5B%5D=2&id_products%5B%5D=3&id_products%5B%5D=4&id_products%5B%5D=5&id_products%5B%5D=6&id_products%5B%5D=7&id_products%5B%5D=8 HTTP/1.1" 200 470
+172.22.0.1 - - [25/Apr/2024:17:05:27 +0000] "GET /robots.txt?1714064726445 HTTP/1.1" 200 829
+172.22.0.1 - - [25/Apr/2024:17:05:37 +0000] "GET /modules/ps_imageslider/images/sample-3.jpg HTTP/1.1" 200 352616
+172.22.0.1 - - [25/Apr/2024:17:05:44 +0000] "GET / HTTP/1.1" 302 -
+172.22.0.1 - - [25/Apr/2024:17:05:44 +0000] "GET / HTTP/1.1" 200 11651
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/blockreassurance/views/dist/front.css HTTP/1.1" 200 373
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_socialfollow/views/css/ps_socialfollow.css HTTP/1.1" 200 129
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/css/theme.css HTTP/1.1" 200 34411
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_searchbar/ps_searchbar.css HTTP/1.1" 200 470
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/productcomments/views/css/productcomments.css HTTP/1.1" 200 2818
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /js/jquery/ui/themes/base/minified/jquery-ui.min.css HTTP/1.1" 200 4871
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /js/jquery/ui/themes/base/minified/jquery.ui.theme.min.css HTTP/1.1" 200 2287
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_imageslider/css/homeslider.css HTTP/1.1" 200 866
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/blockwishlist/public/wishlist.css HTTP/1.1" 200 1100
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/core.js HTTP/1.1" 200 44515
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /js/jquery/ui/jquery-ui.min.js HTTP/1.1" 200 60733
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/productcomments/views/js/jquery.rating.plugin.js HTTP/1.1" 200 1635
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/blockreassurance/views/dist/front.js HTTP/1.1" 200 1969
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_emailsubscription/views/js/ps_emailsubscription.js HTTP/1.1" 200 846
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/productcomments/views/js/productListingComments.js HTTP/1.1" 200 1528
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_emailalerts/js/mailalerts.js HTTP/1.1" 200 1388
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_searchbar/ps_searchbar.js HTTP/1.1" 200 795
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_shoppingcart/ps_shoppingcart.js HTTP/1.1" 200 1209
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_imageslider/js/homeslider.js HTTP/1.1" 200 788
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_imageslider/js/responsiveslides.min.js HTTP/1.1" 200 1472
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/js/theme.js HTTP/1.1" 200 55897
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/blockwishlist/public/product.bundle.js HTTP/1.1" 200 22839
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /img/logo.png HTTP/1.1" 200 1831
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/blockwishlist/public/vendors.js HTTP/1.1" 200 65922
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/blockwishlist/public/graphql.js HTTP/1.1" 200 72567
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_imageslider/images/sample-1.jpg HTTP/1.1" 200 234051
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /21-home_default/brown-bear-printed-sweater.jpg HTTP/1.1" 200 7405
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /3-home_default/the-best-is-yet-to-come-framed-poster.jpg HTTP/1.1" 200 8986
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /4-home_default/the-adventure-begins-framed-poster.jpg HTTP/1.1" 200 8293
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /1-home_default/hummingbird-printed-t-shirt.jpg HTTP/1.1" 200 7765
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /5-home_default/today-is-a-good-day-framed-poster.jpg HTTP/1.1" 200 8031
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /7-home_default/mug-the-adventure-begins.jpg HTTP/1.1" 200 6394
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /6-home_default/mug-the-best-is-yet-to-come.jpg HTTP/1.1" 200 6609
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /8-home_default/mug-today-is-a-good-day.jpg HTTP/1.1" 200 5994
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /modules/ps_banner/img/sale70.png HTTP/1.1" 200 286053
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/css/12a47ed5fd5585f0f422.woff2 HTTP/1.1" 200 60840
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/css/dce0916af972e3040aa1.woff2 HTTP/1.1" 200 30428
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/css/250c120c3f8b2b0bb58e.woff2 HTTP/1.1" 200 29860
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/css/52260854eea2d38939bf.woff2 HTTP/1.1" 200 29756
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /themes/classic/assets/css/a7360927bb3673ed7814.woff2 HTTP/1.1" 200 29856
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /module/blockwishlist/action?action=getAllWishlist HTTP/1.1" 200 50
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /module/productcomments/CommentGrade?id_products%5B%5D=1&id_products%5B%5D=2&id_products%5B%5D=3&id_products%5B%5D=4&id_products%5B%5D=5&id_products%5B%5D=6&id_products%5B%5D=7&id_products%5B%5D=8 HTTP/1.1" 200 470
+172.22.0.1 - - [25/Apr/2024:17:05:45 +0000] "GET /img/favicon.ico?1324977642 HTTP/1.1" 200 34494
+172.22.0.1 - - [25/Apr/2024:17:06:35 +0000] "-" 408 -
